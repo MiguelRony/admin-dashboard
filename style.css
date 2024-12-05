@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 6fr;
+    width: 100%;
+    height: 100%;
+    font-family: Roboto;
+}
+
+.sidebar{
+    background-color: #0284c7;
+    color: white;
+
+    grid-row: 1/3;
+    display: grid;
+    align-content: start;
+    gap: 40px;
+    padding: 10px;
+}
+
+.sidebar > div{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+}
+
+.icons{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.sidebar > div > *{
+    align-content: center;
+}
+
+.dashboard{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu,
+.settings{
+    font-size: 1rem;
+    font-weight:bold;
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 5fr 1fr 2fr;
+    gap: 10px;
+}
+
+.search-bar{
+    display: grid;
+    grid-template-columns: 1fr 24fr;
+    gap: 15px;
+    padding: 10px;
+}
+
+.search-bar > div {
+    align-content: center;
+}
+
+#magnifing{
+    width: 70%;
+    height: auto;
+}
+
+.notifications > svg{
+    width: 12%;
+    height: auto;
+}
+
+.notifications {
+    display: grid;
+    justify-items: end;
+    align-content: center;
+}
+
+input{
+    border-radius: 10px;
+    height: 25px;
+    width: 100%;
+    border: none;
+    background-color: #cdd2db;
+    color: black;
+    padding-left: 15px;
+}
+
+.user{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 4fr repeat(3, 1fr);
+}
+
+.icon{
+    fill: white;
+    height: 50%;
+
+}
+
+#dash{
+    height: 100%;
+}
