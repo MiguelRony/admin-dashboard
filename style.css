@@ -38,6 +38,14 @@ body, html{
     gap: 10px;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
 .icons{
     display: grid;
     align-items: center;
@@ -116,4 +124,23 @@ input{
 
 #dash{
     height: 100%;
+}
+
+.btn{
+    background-color: #0284c7;
+    color: white;
+    border-radius: 15px;
+    width: 75%;
+    font-weight: bold;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 2.4fr 0.6fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+}
+
+.projects{
+    grid-row: 1/3;
 }
